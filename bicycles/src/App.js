@@ -2,17 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './pages/HelloWorld';
 import Main from './pages/main';
-import { browserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
-    <browserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/helloWorld" element={<HelloWorld />} />
-        <Route path="/" element={<Main />}></Route>
+        <Route path="/" element={<Main />} />
       </Routes>
-    </browserRouter>
+    </BrowserRouter>
   );
 }
 
